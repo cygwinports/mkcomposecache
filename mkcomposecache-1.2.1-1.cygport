@@ -1,7 +1,5 @@
 inherit xorg
 
-PATCH_URI="1.2-Xlocale.patch"
-
 src_install() {
 	cd ${B}
 	cyginstall
