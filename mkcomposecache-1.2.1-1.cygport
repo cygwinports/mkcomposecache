@@ -1,8 +1,0 @@
-inherit xorg
-
-src_install() {
-	cd ${B}
-	cyginstall
-
-	dosbin ${S}/mkallcomposecaches.sh
-}

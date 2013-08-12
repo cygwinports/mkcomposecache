@@ -1,0 +1,15 @@
+inherit xorg
+
+NAME="mkcomposecache"
+VERSION=1.2.1
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="X Compose file cache creator"
+DESCRIPTION="X.Org tool for explicitly creating a cache file for a compose file"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	dosbin ${S}/mkallcomposecaches.sh
+}
